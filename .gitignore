@@ -1,0 +1,18 @@
+# build
+dist/
+build/
+artifacts/
+*.egg-info/
+
+# pytest
+.pytest_cache/
+**/__pycache__
+
+# IDE/etc
+.vscode/
+
+# venv
+.pyspark-applications/
+
+# data
+data/
