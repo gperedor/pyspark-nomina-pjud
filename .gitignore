@@ -15,4 +15,4 @@ artifacts/
 .pyspark-applications/
 
 # data
-data/
+/data/
