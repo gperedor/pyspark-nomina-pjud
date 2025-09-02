@@ -1,4 +1,7 @@
-.PHONY: clean fmt install install-deps lint test
+.PHONY: check clean fmt install install-deps lint test
+
+check: install-deps
+	python3 -m pytest test
 
 clean:
 	rm -rf build/
@@ -18,6 +21,3 @@ install-deps:
 lint:
 	python3 -m black --check pyspark_nomina_pjud test
 	python3 -m isort --check-only pyspark_nomina_pjud test
-
-test:
-	python3 -m pytest test
