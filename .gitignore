@@ -16,3 +16,6 @@ artifacts/
 
 # data
 /data/
+
+# Configuration
+.env
