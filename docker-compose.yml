@@ -1,0 +1,11 @@
+services:
+  batch-parse:
+    container_name: batch-parse
+    build:
+      context: .
+      dockerfile: docker/batch_parse/Dockerfile
+    volumes:
+      - ${DATA_DIR}:/data
+    env_file:
+      - path: .env
+        required: true

@@ -13,3 +13,8 @@ indent_size = 4
 [*.sls, *.yaml, *.yml]
 indent_style = space
 indent_size = 2
+[test/data/**]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset

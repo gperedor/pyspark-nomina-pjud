@@ -15,4 +15,7 @@ artifacts/
 .pyspark-applications/
 
 # data
-data/
+/data/
+
+# Configuration
+.env

@@ -10,7 +10,7 @@ The intended architecture is as follows:
       │                                  │ OOC-STORAGE      │  │              │                        │
       │   ┌───────┐      ┌─────────┐     │                  │  │              │                        │
       │   │       │      │         │     │┌─────────┐       │  │              │   ┌────────────────┐   │
-      │   │  CSV  ├─────►│  SPARK  ├────►││ JSONL   ├───────┼──┼──────────────┼──►│ LOADER-WORKER  │   │
+      │   │  CSV  ├─────►│  SPARK  ├────►││ CSV     ├───────┼──┼──────────────┼──►│ LOADER-WORKER  │   │
       │   │       │      │         │     │└─────────┘       │  │              │   │                │   │
       │   └───────┘      └────┬────┘     │                  │  │              │   │                │   │
       │                       │          │┌─────────────┐   │  │              │   │                │   │
@@ -36,3 +36,18 @@ The intended architecture is as follows:
       │                                                        │└───────────┘ │                        │
       └────────────────────────────────────────────────────────└──────────────└────────────────────────┘
 
+## Testing
+
+Having a virtual environment prepared, issue
+
+```sh
+make check
+```
+
+## Running
+
+Issue
+
+```sh
+docker-compose run batch-parse
+```
